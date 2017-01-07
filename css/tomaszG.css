@@ -1,0 +1,216 @@
+/* tomaszG.css 16/12/2016 TG */
+
+body {
+	margin:0;
+	padding:0;
+	color:rgb(98, 101, 103);	
+	box-sizing:border-box;
+	clear:both;
+	background-color: rgb(255, 255, 255);
+}
+.body {
+	margin:0 auto;
+	width:80%;
+	max-width:1280px;
+	height:100%;
+	box-sizing:border-box;
+	clear:both;
+	font-family:Impact, Arial, sans-serif;
+}
+/* set text-decoration and color for links */
+a {
+	text-decoration:none;
+	color:rgb(98, 101, 103);
+}
+nav a:hover {
+	color: rgb(0, 0, 0);
+	text-decoration:underline;
+}
+nav {
+	margin:50px auto 0;
+	padding:10px;
+	width:100%;
+	height:auto;
+	border-top:solid 1px rgb(80, 80, 80);
+	border-bottom:solid 1px rgb(80, 80, 80);
+	font-family:Arial;
+	font-size:150%;
+	
+	text-align:center;
+	box-sizing:border-box;
+	color:black;
+}
+nav ul {
+	list-style:none;
+	margin:0 auto;
+}
+nav ul li {
+	display:inline;
+	padding:50px;
+}
+.imageContainer {
+	float:left;
+	margin:50px auto;
+	padding:25px;
+	width:30%;
+	box-sizing:border-box;
+	/*border:solid 1px blue;*/
+}
+.imageContainer img {
+	width:100%;
+	height:auto;
+	border-radius:50%;
+}
+.mainContainer {
+	margin:100px 0 0 20px;
+	width:60%;
+	float:right;
+	box-sizing:border-box;
+	color:rgb(98, 101, 103);
+	font-family:Cambria, Candara, Georgia, Palatino, Arial, sans-serif;
+	font-size:120%;	
+	/*border:solid 1px red;*/
+}
+.mainContainer p {
+	text-indent:30px;
+}
+#signature {
+	font-family:"Brush Script MT", Papyrus, Arial, sans-serif;
+	text-align:right;	
+}
+.projects {
+	width:80%;
+	height:auto;
+	margin:50px 10%;
+	padding-bottom:40px;
+	font-family:Arial;
+	box-sizing:border-box;	
+	text-align:left;
+	border-bottom:solid 1px silver;
+	position:relative;
+	float:left;
+}
+.projects a {
+	color:rgb(50, 50, 50);
+	font-family:Impact;
+}
+.projects a:hover {
+	color: rgb(0, 0, 0);
+	text-decoration:underline;
+}
+.projects #full_web {
+	margin:10px;
+	width:40%;
+	height:auto;
+}
+#show_hide {
+	margin:10px;
+	float:right;
+	font-size:70%;
+}
+.projects #mobile_web {
+	margin:10px 30px 10px 10px;
+	width:20%;
+	height:auto;
+	float:left;
+}
+.projects #mid_web {
+	margin:10px 10px 30px 10px;
+	width:30%;
+	height:auto;
+	float:right;
+}
+.projects #icon_image {
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:70px;
+	height:auto;
+}
+.projects #main_span {
+	float:right;
+}
+#hide {
+	margin-left:200px;
+}
+.links {
+	position:absolute;
+	bottom:0;
+	font-size:70%;
+}
+.links a {
+	padding-left:50px;
+}
+/* contact details on contct pages */
+form {
+	width:45%;
+	margin:50px auto 0;
+	float:left;
+	box-sizing:border-box;
+	font-family:Arial, sans-serif;
+	color:rgb(98, 101, 103);
+}
+.antispam { 
+	display:none;
+}
+.contact {
+	width:50%;
+	float:right;
+	margin:50px 20px auto 0;
+	text-align:left;
+	font-family:Arial, sans-serif;
+	font-size:120%;
+	box-sizing:border-box;
+	color:rgb(98, 101, 103);
+}
+.contact img {
+	width:12%;
+	max-width:100px;
+	height:auto;
+	padding:20px;
+}
+.contact #emailContact {
+	width:6%;
+	max-width:45px;
+	height:auto;
+	padding:0;
+	margin:0;
+}
+.contact a:hover {
+	color: rgb(0, 0, 0);
+	font-weight:bold;
+}
+#credit {
+	margin:0 auto;
+	position:bottom;
+	float:left;
+	color:rgb(190, 190, 190);
+	font-family:Arial, sans-serif;
+	font-size:80%;
+}
+#credit a{
+	color:rgb(190, 190, 190);
+}
+#footer a {
+	position:fixed;
+	bottom:0;
+	left:10px;
+	color: rgb(0, 0, 0);
+}
+/*#footer {
+	float:left;
+	width:100%;
+	background-color:rgb(0, 0, 0);
+}
+#footer a, #footer p {
+	margin:0;
+	padding:15px 10px 10px;
+	color: rgb(255, 255, 255); 
+}
+#footer a {
+	float:left;
+}
+#footer p {
+	text-align:right;
+	font-style:italic;
+}*/
