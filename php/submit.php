@@ -35,12 +35,16 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 <head>
 
 <title>Thanks!</title>
+<style>
+	a {text-decoration:none; color: rgb(0, 0, 0);}
+</style>
 
 </head>
 <body>
 
 <h1>Thanks</h1>
 <p>I'll get back to you as soon as possible.</p>
+<p><a href="../contact.html">Back to contact page</a></p>
 
 </body>
 </html>
