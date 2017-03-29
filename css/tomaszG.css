@@ -6,7 +6,14 @@ body {
 	color:rgb(98, 101, 103);	
 	box-sizing:border-box;
 	clear:both;
+	color:rgb(0, 0, 0);	
 	background-color: rgb(255, 255, 255);
+	box-sizing:border-box;
+	/*background-image:url("../images/underConstructionBackground2.jpg");
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;*/
 }
 .body {
 	margin:0 auto;
@@ -31,14 +38,14 @@ nav {
 	padding:10px;
 	width:100%;
 	height:auto;
-	border-top:solid 1px rgb(80, 80, 80);
-	border-bottom:solid 1px rgb(80, 80, 80);
+	border-top:solid 2px rgb(80, 80, 80);
+	border-bottom:solid 2px rgb(80, 80, 80);
 	font-family:Arial;
 	font-size:150%;
-	
 	text-align:center;
 	box-sizing:border-box;
 	color:black;
+	background-color: rgba(255, 255, 255, 0.6);
 }
 nav ul {
 	list-style:none;
@@ -46,7 +53,10 @@ nav ul {
 }
 nav ul li {
 	display:inline;
-	padding:50px;
+	padding:2%;
+}
+nav .current {
+	font-weight:bold;
 }
 .imageContainer {
 	float:left;
@@ -55,7 +65,6 @@ nav ul li {
 	width:30%;
 	height:auto;
 	box-sizing:border-box;
-	/*border:solid 1px blue;*/
 }
 .imageContainer img {
 	width:80%;
@@ -63,33 +72,50 @@ nav ul li {
 	border-radius:50%;
 }
 .mainContainer {
-	margin:100px 0 0 20px;
+	margin:100px 0 100px 20px;
+	padding:10px;
 	width:60%;
 	float:right;
 	box-sizing:border-box;
 	color:rgb(98, 101, 103);
 	font-family:Cambria, Candara, Georgia, Palatino, Arial, sans-serif;
 	font-size:120%;	
-	/*border:solid 1px red;*/
+	line-height:150%;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 .mainContainer p {
 	text-indent:30px;
 }
 #signature {
-	font-family:"Brush Script MT", Papyrus, Arial, sans-serif;
-	text-align:right;	
+	text-indent:0;
+	font-family:"Lucida Handwriting", "Brush Script MT", "Snell Roundhand", cursive;
+	text-align:left;	
+}	
+.imageContainerAbout {
+	float:left;
+	margin:50px auto;
+	padding:25px;
+	width:35%;
+	height:auto;
+	box-sizing:border-box;
+}
+.imageContainerAbout img {
+	width:100%;
+	max-width:320px;
+	height:auto;
 }
 .projects {
-	width:80%;
+	width:85%;
 	height:auto;
 	margin:50px 10%;
-	padding-bottom:40px;
+	padding:40px;
 	font-family:Arial;
 	box-sizing:border-box;	
 	text-align:left;
 	border-bottom:solid 1px silver;
 	position:relative;
 	float:left;
+	background-color: rgba(233, 233, 233, 0.5);
 }
 .projects a {
 	color:rgb(50, 50, 50);
@@ -101,10 +127,11 @@ nav ul li {
 }
 .projects #full_web {
 	margin:10px;
-	width:40%;
+	width:45%;
 	height:auto;
+	min-width:120px;
 }
-#show_hide {
+.show_hide {
 	margin:10px;
 	float:right;
 	font-size:70%;
@@ -114,14 +141,36 @@ nav ul li {
 	width:20%;
 	height:auto;
 	float:left;
+	min-width:100px;
 }
 .projects #mid_web {
+	margin:10px 10px 30px 10px;
+	width:45%;
+	height:auto;
+	float:right;
+	min-width:110px;
+}
+.projects .main_img {
+	margin:10px;
+	width:40%;
+	height:auto;
+	min-width:120px;
+}
+.projects #small_img {
+	margin:10px 30px 10px 10px;
+	width:20%;
+	height:auto;
+	float:left;
+	min-width:100px;
+}
+.projects #medium_img {
 	margin:10px 10px 30px 10px;
 	width:30%;
 	height:auto;
 	float:right;
+	min-width:110px;
 }
-.projects #icon_image {
+.projects .icon_image {
 	position:absolute;
 	right:0;
 	bottom:0;
@@ -131,8 +180,9 @@ nav ul li {
 .projects #main_span {
 	float:right;
 }
-#hide {
-	margin-left:200px;
+.projects .hide {
+	margin-left:150px;
+	color:rgb(195, 5, 25);
 }
 .links {
 	position:absolute;
@@ -140,78 +190,283 @@ nav ul li {
 	font-size:70%;
 }
 .links a {
-	padding-left:50px;
+	padding-left:5%;
 }
 /* contact details on contct pages */
-form {
-	width:45%;
+.contact {
+	margin:30px 0;
+	padding:5px;
+	height:100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-sizing:border-box;
+}
+.contact_details {
+	width:70%;
 	margin:50px auto 0;
-	float:left;
+	font-family:Cambria, Candara, Georgia, Palatino, Arial, sans-serif;
+	font-size:160%;
+	box-sizing:border-box;
+	color:rgb(98, 101, 103);
+}
+.contact_details img {
+	width:10%;
+	max-width:100px;
+	height:auto;
+	padding:20px;
+	padding-bottom:0;
+}
+.contact_details #emailContact {
+	width:3%;
+	max-width:45px;
+	height:auto;
+	padding:0 2px;
+	margin:0;
+}
+.contact_details a:hover {
+	color: rgb(0, 0, 0);
+	font-weight:bold;
+}
+form {
+	width:70%;
+	margin:50px auto 0;
 	box-sizing:border-box;
 	font-family:Arial, sans-serif;
 	color:rgb(98, 101, 103);
+	font-size:120%;
+}
+textarea {
+	max-width:90%;
 }
 .antispam { 
 	display:none;
 }
-.contact {
-	width:50%;
-	float:right;
-	margin:50px 20px auto 0;
-	text-align:left;
-	font-family:Arial, sans-serif;
-	font-size:120%;
-	box-sizing:border-box;
-	color:rgb(98, 101, 103);
-}
-.contact img {
-	width:12%;
-	max-width:100px;
-	height:auto;
-	padding:20px;
-}
-.contact #emailContact {
-	width:6%;
-	max-width:45px;
-	height:auto;
-	padding:0;
-	margin:0;
-}
-.contact a:hover {
-	color: rgb(0, 0, 0);
-	font-weight:bold;
-}
 #credit {
 	margin:0 auto;
-	position:bottom;
-	float:left;
 	color:rgb(190, 190, 190);
-	font-family:Arial, sans-serif;
+	font-family:Arial, Candara, Georgia, Palatino, sans-serif;
 	font-size:80%;
 }
 #credit a{
 	color:rgb(190, 190, 190);
 }
-#footer a {
+#top {
 	position:fixed;
-	bottom:0;
 	left:10px;
-	color: rgb(0, 0, 0);
+	bottom:10px;
 }
-/*#footer {
-	float:left;
-	width:100%;
-	background-color:rgb(0, 0, 0);
-}
-#footer a, #footer p {
-	margin:0;
-	padding:15px 10px 10px;
-	color: rgb(255, 255, 255); 
-}
-#footer a {
-	float:left;
-}
-#footer p {
-	text-align:right;
+#footer {
+	margin:10px auto;
+	padding:5px 30px;
+	font-family:Arial, Candara, Georgia, Palatino, sans-serif;
 	font-style:italic;
-}*/
+	font-size:100%;
+	text-align:right;
+	color:rgb(255, 255, 255);
+	width:100%;
+	background-color: rgb(0, 0, 0);
+	float:right;
+	box-sizing:border-box;
+}
+@media only screen and (max-width:767px) and (min-width:618px) {
+	.body {
+		width:85%;
+	}
+	nav {
+		font-size:100%;
+	}
+	nav ul li {
+		padding:3%;
+	}
+	.links a {
+		padding-left:4%;
+	}
+	.imageContainer {
+		padding:5px;
+	}
+	.imageContainer img {
+		width:90%;
+	}
+	.mainContainer {
+		margin:40px 0 0 10px;
+		padding:10px;
+	}
+	.contact_details {
+		width:53%;
+		margin:50px 5px auto 0;
+		font-size:95%;
+	}
+}
+@media only screen and (max-width:617px) and (min-width:481px) {
+	.body {
+		width:90%;
+	}
+	nav {
+		font-size:100%;
+	}
+	nav ul li {
+		padding:2%;
+	}
+	.links a {
+		padding-left:2%;
+	}
+	.imageContainer {
+		padding:5px;
+		margin:50px 0 0 20px;
+	}
+	.imageContainer img {
+		width:95%;
+	}
+	.imageContainerAbout {
+		width:50%;
+		margin:20px auto 0;
+	}	
+	.mainContainer {
+		margin:0;
+		padding:10px;
+		width:90%;
+	}
+	.contact_details {
+		width:100%;
+		float:left;
+		margin:10px auto;
+		font-size:95%;
+		padding:0;
+	}
+	.contact_details img {
+		width:10%;
+		max-width:100px;
+		height:auto;
+		padding:10px;
+	}
+	form {
+		width:100%;
+		margin:10px auto;
+		padding:0;
+		float:left;
+	}
+}
+@media only screen and (max-width:480px) and (min-width:346px) {
+	.body {
+		width:95%;
+	}
+	nav {
+		font-size:90%;
+	}
+	nav ul li {
+		padding:1%;
+	}
+	.links a {
+		padding-left:2%;
+	}
+	.imageContainer {
+		margin:50px 0 0 20px;
+		padding:0;
+	}
+	.imageContainer img {
+		width:90%;
+	}
+	.mainContainer {
+		margin:0 auto;
+		padding:5px;
+		width:90%;
+	}
+	.imageContainerAbout {
+		width:50%;
+		margin:20px auto 0;
+	}
+	.hide {
+	margin-left:50px;
+	}
+	.links {
+		font-size:70%;
+	}
+	.projects .icon_image {
+		width:50px;
+	}
+	.contact_details {
+		width:100%;
+		float:left;
+		margin:10px auto;
+		font-size:85%;
+		padding:0;
+	}
+	.contact_details img {
+		width:10%;
+		max-width:100px;
+		height:auto;
+		padding:5px;
+	}
+	form {
+		width:100%;
+		margin:10px auto;
+		padding:0;
+		float:left;
+		font-size:80%;
+	}
+}
+@media only screen and (max-width:345px) and (min-width:200px) {
+	.body {
+		width:100%;
+	}
+	nav {
+		font-size:120%;
+	}
+	nav ul li {
+		padding:1%;
+	}
+	nav ul li {
+		display:block;
+	}
+	.links a {
+		padding-left:2%;
+	}
+	.imageContainer {
+		margin:20px 0 0 10px;
+		padding:0;
+		width:50%;
+	}
+	.imageContainer img {
+		width:90%;
+	}
+	.mainContainer {
+		margin:0 auto;
+		padding:5px;
+		width:90%;
+	}
+	.imageContainerAbout {
+		width:50%;
+		margin:20px auto 0;
+	}
+	.imageContainerAbout img {
+		min-width:100px;
+	}
+	.hide {
+	margin-left:50px;
+	}
+	.links {
+		font-size:70%;
+	}
+	.projects .icon_image {
+		width:50px;
+	}
+	.contact_details {
+		width:100%;
+		float:left;
+		margin:10px auto;
+		font-size:85%;
+		padding:0;
+	}
+	.contact_details img {
+		width:10%;
+		max-width:100px;
+		height:auto;
+		padding:5px;
+	}
+	form {
+		width:100%;
+		margin:10px auto;
+		padding:0;
+		float:left;
+		font-size:80%;
+	}
+}

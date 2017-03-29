@@ -8,25 +8,100 @@
 	<link rel="stylesheet" type="text/css" href="./css/tomaszG.css">
     <link rel="icon" href="./images/tGicon.png" type="image/gif">
 	<script type="text/javascript" src="./javaScript/tomaszG.js"></script>
-	<!--function showhide(id) {
-		var e = document.getElementById(id);
-		e.style.display = (e.style.display == 'block') ? 'none' : 'block';
-	 }-->
 </head>
 
 <body class="body">
 	<nav><ul>
-			<li><a href="./index.html">About</a></li>
-			<li>Portfolio</li>
-			<li><a href="./contact.html">Contact</a></li>		
+			<li id="page_top"><a href="./index.html">Home</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li class="current">Portfolio</li>
+			<li><a href="./contact.html">Contact</a></li>	
+			<li><a href="./pdf/cv.pdf" target="_blank">CV.pdf</a></li>
 	</ul></nav>
+	
 	<div class="projects">
-		<img id="full_web" src="./images/capture7.PNG" alt="2048 Game">
+		<img id="full_web" src="./images/capture0.png" alt="full web">
+		<p><a href="http://marcelbuilder.ie" target="_blank">Marcel Builder</a>
+		is a fully responsive website with information about 
+		company, images gallery of their work and contact information.<br>
+		<a class="show_hide" href="javascript:showhide('proj1')">show / hide more</a>
+		<div id="proj1" style="display:none;">
+		<img id="mobile_web" src="./images/capture1.PNG" alt="mobile web">
+        <p>title: Marcel Builder<br>
+		description: Users can visit four main pages and several subpages with all the information 
+		about company, images gallery where images can be viewed in large format and contact details 
+		including form to send meesages.<br><br>
+		website tested on listed browser and screens:<br>
+		- Google Chrome	49.0.2623.110 - 55.0.2883.87 (Official Build) m (64-bit) and m (32-bit) (windows 7 and android 5.1.1)<br>
+		- Firefox 45.0.1 - 50.1.0 (windows 7)<br>
+		- (min-width:240px) - (max-width:3840px) should work fine abowe that but not tested.<br><br>
+		technologies:<br>
+		- W3C standards HTML and CSS
+		
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=marcelbuilder.ie&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+			<img style="border:0;width:88px;height:31px;float:right"
+				src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+				alt="Valid CSS!" />
+			</a>
+		<br>
+		- JavaScript (lightbox) and PHP (email form) downloaded and modify under MIT License
+		<img id="mid_web" src="./images/capture3.png" alt="middle web">
+		<p class="links">
+		<a href="http://marcelbuilder.ie" target="_blank">www.marcelbuilder.ie</a>
+		<a href="https://github.com/tomasz-g/Dublin-Renovations" target="_blank">www.GitHub/Marcel Builder</a>
+		<a class="hide" href="javascript:showhide('proj1')">hide</a>    
+		</p></div>
+		<img class="icon_image" src="./images/html5css3Logo.png" alt="html5 and css logo">
+	</div>
+	<div class="projects">
+		<img class="main_img" src="./images/capture6.PNG" alt="rice rocks">
+		<p><a href="http://www.codeskulptor.org/#user42_PS0ylA7PZNihOPd.py" target="_blank">Rice Rocks</a>
+		is a simple clone of the Atari classic Asteroids game. This was my final week mini project for 
+		the Introduction to Interactive Programming in Python on
+		<a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
+		Coursera.org - Fundamentals of Computing Specialization.</a><br>
+		<a class="show_hide" href="javascript:showhide('proj2')">show / hide more</a>
+		<div id="proj2" style="display:none;">
+		<img id="small_img" src="./images/capture4.PNG" alt="rice rocks">
+        <p> RiceRocks (Asteroids) the Game<br>
+			An Introduction to Interactive Programming in Python
+			which is 1 of 3 in the 
+			<a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
+			Fundamentals of Computing Specialization.</a><br> 
+			by Joe Warren, Scott Rixner, John Greiner, Stephen Wong -- Rice Univercity<br>
+			project by TG<br>
+			Game Instruction:<br>
+			!!!! NOTE !!!!<br>
+			popup windows must be enabled<br>
+			Start:<br>
+			- Click Play icon in the left-top corner and fallow instruction on the screen<br>
+			Movement:<br>
+			- UP Arrow Key to move forward<br>
+			- RIGHT Arrow Key to turn ship clockwise<br>
+			- LEFT Arrow Key to turn ship anticlockwise<br>
+			Shooting:<br>
+			- SPACE Key to shoot plasma missile<br>
+			- C Key to shoot explosive missile<br>
+			End the Game:<br>
+			- close the window or S Key<br>
+		<img id="medium_img" src="./images/capture5.PNG" alt="rice rocks">
+		<p>Rice Rocks - Snipped:
+		<script src="https://gist.github.com/tomasz-g/7e7a090096a667a45ed1377fb69717ac.js"></script>
+		</p>
+		<p class="links">
+		<a href="http://www.codeskulptor.org/#user42_PS0ylA7PZNihOPd.py" target="_blank">www.CodeSkulptor/Rice Rocks</a>
+		<a href="https://github.com/tomasz-g/RiceRocks" target="_blank">www.GitHub/Rice Rocks</a>
+		<a class="hide" href="javascript:showhide('proj2')">hide</a>
+		</p></div>
+		<img class="icon_image" src="./images/pythonLogo.png" alt="python logo">
+	</div>
+	<div class="projects">
+		<img class="main_img" src="./images/capture7.PNG" alt="2048 Game">
 		<p><a href="http://www.codeskulptor.org/#user42_Ft2H7bAMvOIdsqh.py" target="_blank">2048 Game</a>
 		is a clone of the 2048 Game. This was one of my mini project for the Principles of Computing 
 		on <a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
 		Coursera.org - Fundamentals of Computing Specialization.</a><br>
-		<a id="show_hide" href="javascript:showhide('proj3')">show / hide more</a>
+		<a class="show_hide" href="javascript:showhide('proj3')">show / hide more</a>
 		<div id="proj3" style="display:none;">
         <p> 2048 Game<br>
 			Principles of Computing in Python
@@ -52,95 +127,67 @@
 			with the same manner as on start.If no tiles would combine
 			or slide in a given direction, then that is not a legal 
 			move, and you cannot make that move on the current turn.
-			If there are no free tiles on the grid, the game ends.<br>
-			<h4>2048 - HOW TO PLAY?</h4>
-			- use arrows to slide tiles<br>
-			- hit 'New Game' button to reset Game<br>
-			- hit 'How to Play' button to see Game instruction<br>
-			- hit 'Back to Game' button to hide Game instruction<br>
-			- change grid size<br>
-			change value of HEIGHT and/or WIDTH variable in the code<br>
-			'2' <= HEIGHT, WIDTH <= '10' # not tested above '10'<br><br>
-			* Graphical user interface "GUI class" provided by instructors 
-			and modified by TG (add game instruction)
+			If there are no free tiles on the grid, the game ends.
+		<p>2048 Game - Snipped:
+		<script src="https://gist.github.com/tomasz-g/70c71a6430a941b80133a6ca51a07463.js"></script>
+		</p>
 		<p class="links">
 		<a href="http://www.codeskulptor.org/#user42_Ft2H7bAMvOIdsqh.py" target="_blank">www.CodeSkulptor/2048 Game</a>
 		<a href="https://github.com/tomasz-g/2048game" target="_blank">www.GitHub/2048 Game</a>
-		<a id="hide" href="javascript:showhide('proj3')">hide more</a>
-		</p>
-		</p></div></p>
-		<img id="icon_image" src="./images/pythonLogo.png" alt="python logo">
+		<a class="hide" href="javascript:showhide('proj3')">hide</a>
+		</p></div>
+		<img class="icon_image" src="./images/pythonLogo.png" alt="python logo">
 	</div>
 	<div class="projects">
-		<img id="full_web" src="./images/capture.PNG" alt="full web">
-		<p><a href="http://marcelbuilder.ie" target="_blank">Marcel Builder</a>
-		is a construction company responsible website with information about 
-		company and images gallery of their work.<br>
-		<a id="show_hide" href="javascript:showhide('proj1')">show / hide more</a>
-		<div id="proj1" style="display:none;">
-		<img id="mobile_web" src="./images/capture1.PNG" alt="mobile web">
-        <p>title: Marcel Builder<br>
-		description: Users / Visitors can visit four main pages and several subpages with all the information 
-		about company, contact details and images gallery where images can be viewed in large format.<br>
-		website tested on listed browser and screens:<br>
-		- Google Chrome	49.0.2623.110 (Official Build) m (64-bit) and m (32-bit) (windows 7 and android 5.1.1)<br>
-		- Firefox 45.0.1 (windows 7)<br>
-		- (min-width:240px) - (max-width:3840px) should work fine abowe that but not tested.
-		<img id="mid_web" src="./images/capture3.PNG" alt="middle web">
-		<p class="links">
-		<a href="http://marcelbuilder.ie" target="_blank">www.marcelbuilder.ie</a>
-		<a href="https://github.com/tomasz-g/Dublin-Renovations" target="_blank">www.GitHub/Marcel Builder</a>
-		<a id="hide" href="javascript:showhide('proj1')">hide more</a>    
-		</p></div></p>
-		<img id="icon_image" src="./images/pythonLogo.png" alt="html5 and css logo">
-	</div>
-	<div class="projects">
-		<img id="full_web" src="./images/capture6.PNG" alt="rice rocks">
-		<p><a href="http://www.codeskulptor.org/#user42_PS0ylA7PZNihOPd.py" target="_blank">Rice Rocks</a>
-		is a simple clone of the Atari classic Asteroids game. This was my final week mini project for 
-		the Introduction to Interactive Programming in Python on
-		<a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
+		<img class="main_img" src="./images/capture14.PNG" alt="Zombie Apocalypse">
+		<p><a href="http://www.codeskulptor.org/#user42_A8IujNpwH3GZXEX.py" target="_blank">Zombie Apocalypse</a>
+		this was one of my mini project for the Principles of Computing 
+		on <a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
 		Coursera.org - Fundamentals of Computing Specialization.</a><br>
-		<a id="show_hide" href="javascript:showhide('proj2')">show / hide more</a>
-		<div id="proj2" style="display:none;">
-		<img id="mobile_web" src="./images/capture4.PNG" alt="rice rocks">
-        <p> RiceRocks (Asteroids) the Game<br>
-			An Introduction to Interactive Programming in Python
-			which is 1 of 3 in the 
+		<a class="show_hide" href="javascript:showhide('proj7')">show / hide more</a>
+		<div id="proj7" style="display:none;">
+        <p>Zombie Apocalypse<br>
+			Principles of Computing in Python which is 2 of 3 in the 
 			<a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
 			Fundamentals of Computing Specialization.</a><br> 
 			by Joe Warren, Scott Rixner, John Greiner, Stephen Wong -- Rice Univercity<br>
 			project by TG<br>
-			Game Instruction:<br>
-			!!!! NOTE !!!!<br>
-			popup windows must be enabled<br>
-			Start:<br>
-			- Click Play icon in the left-top corner and fallow instruction on the screen<br>
-			Movement:<br>
-			- UP Arrow Key to move forward<br>
-			- RIGHT Arrow Key to turn ship clockwise<br>
-			- LEFT Arrow Key to turn ship anticlockwise<br>
-			Shooting:<br>
-			- SPACE Key to shoot plasma missile<br>
-			- C Key to shoot explosive missile<br>
-			End the Game:<br>
-			- close the window or S Key<br>
-		<img id="mid_web" src="./images/capture5.PNG" alt="rice rocks">
-		<p class="links">
-		<a href="http://www.codeskulptor.org/#user42_PS0ylA7PZNihOPd.py" target="_blank">www.CodeSkulptor/Rice Rocks</a>
-		<a href="https://github.com/tomasz-g/RiceRocks" target="_blank">www.GitHub/Rice Rocks</a>
-		<a id="hide" href="javascript:showhide('proj2')">hide more</a>
+			<p>
+			"ApocalypseGUI class", "Grid class" and "Queue class" provided by instrucrors and "ApocalypseGUI" modified by TG (Dark City and auto movment)<br>
+			link to provided code <a href="http://www.codeskulptor.org/#poc_zombie_template.py" target="_blank">Zombie template</a><br>			
+			<h4>Zombie Apocalypse</h4>
+			<p>
+			 Simulation of zombies (red sqares) and humans 
+			(green squares) interacting on a grid.
+			Zombies chase humans and humans flee from zombies which 
+			can only move up, down, left or right in one step
+			of the simulation and humans are more agile and can move
+			in these four directions as well as the four neighboring 
+			diagonal directions. 
+			 If a zombie catches a human by positioning itself in the 
+			same cell, human become zombie (change for purple for a 
+			moment and then red permanently). 
+			 Some of the cells (black squares) in this grid will 
+			be marked as impassable and restrict zombie/human movement
+			so that they can not move through these cells.
+			</p>
+		<p>Zombie Apocalypse - Snipped:
+		<script src="https://gist.github.com/tomasz-g/e648ae17a0f53c16e54fd489ee67e783.js"></script>
 		</p>
-		</p></div></p>
-		<img id="icon_image" src="./images/pythonLogo.png" alt="python logo">
+		<p class="links">
+		<a href="http://www.codeskulptor.org/#user42_A8IujNpwH3GZXEX.py" target="_blank">www.CodeSkulptor/Zombie Apocalypse</a>
+		<a href="https://github.com/tomasz-g/ZombieApocalypse" target="_blank">www.GitHub/Zombie Apocalypse</a>
+		<a class="hide" href="javascript:showhide('proj7')">hide</a>
+		</p></div>
+		<img class="icon_image" src="./images/pythonLogo.png" alt="python logo">
 	</div>
 	<div class="projects">
-		<img id="full_web" src="./images/capture10.PNG" alt="Tic Tac Toe">
+		<img class="main_img" src="./images/capture10.PNG" alt="Tic Tac Toe">
 		<p><a href="http://www.codeskulptor.org/#user40_qI96rfdMpH7xZ4i.py" target="_blank">Tic Tac Toe</a>
 		this was one of my mini project for the Principles of Computing 
 		on <a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
 		Coursera.org - Fundamentals of Computing Specialization.</a><br>
-		<a id="show_hide" href="javascript:showhide('proj4')">show / hide more</a>
+		<a class="show_hide" href="javascript:showhide('proj4')">show / hide more</a>
 		<div id="proj4" style="display:none;">
         <p>Tic Tac Toe<br>
 			Principles of Computing in Python which is 2 of 3 in the 
@@ -156,21 +203,23 @@
 			be patient, it w'll take up to 20 seconds for AI to make a move
 			on 9 square board with 1000 trials<br><br>
 			* poc_ttt_provided and poc_ttt_gui provided by instructors
+		<p>Tic Tac Toe - Snipped:
+		<script src="https://gist.github.com/tomasz-g/a9f895c4d729e04a248499b3404bb5e7.js"></script>
+		</p>
 		<p class="links">
 		<a href="http://www.codeskulptor.org/#user40_qI96rfdMpH7xZ4i.py" target="_blank">www.CodeSkulptor/Tic Tac Toe</a>
 		<a href="https://github.com/tomasz-g/TicTacToe" target="_blank">www.GitHub/Tic Tac Toe</a>
-		<a id="hide" href="javascript:showhide('proj4')">hide more</a>
-		</p>
-		</p></div></p>
-		<img id="icon_image" src="./images/pythonLogo.png" alt="python logo">
+		<a class="hide" href="javascript:showhide('proj4')">hide</a>
+		</p></div>
+		<img class="icon_image" src="./images/pythonLogo.png" alt="python logo">
 	</div>
 	<div class="projects">
-		<img id="full_web" src="./images/capture11.PNG" alt="Word Wrangler">
+		<img class="main_img" src="./images/capture11.PNG" alt="Word Wrangler">
 		<p><a href="http://www.codeskulptor.org/#user42_TGhx78FsnkqsRTO.py" target="_blank">Word Wrangler</a>
 		this was one of my mini project for the Principles of Computing 
 		on <a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
 		Coursera.org - Fundamentals of Computing Specialization.</a><br>
-		<a id="show_hide" href="javascript:showhide('proj5')">show / hide more</a>
+		<a class="show_hide" href="javascript:showhide('proj5')">show / hide more</a>
 		<div id="proj5" style="display:none;">
         <p>Word Wrangler<br>
 			Principles of Computing in Python which is 2 of 3 in the 
@@ -205,21 +254,23 @@
 			* Graphical user interface "WordWranglerGUI class" and "WordWrangler class" provided by instructors<br>
 			(modifed to do not throw errors on capitals letters and leading or/and trailing whitespace characters 
 			in entered words)
+		<p>Word Wrangler - Snipped:
+		<script src="https://gist.github.com/tomasz-g/022747679f7f942c8ac2ba026200ebb9.js"></script>
+		</p>
 		<p class="links">
 		<a href="http://www.codeskulptor.org/#user42_TGhx78FsnkqsRTO.py" target="_blank">www.CodeSkulptor/Word Wrangler</a>
 		<a href="https://github.com/tomasz-g/WordWrangler" target="_blank">www.GitHub/Word Wrangler</a>
-		<a id="hide" href="javascript:showhide('proj5')">hide more</a>
-		</p>
-		</p></div></p>
-		<img id="icon_image" src="./images/pythonLogo.png" alt="python logo">
+		<a class="hide" href="javascript:showhide('proj5')">hide</a>
+		</p></div>
+		<img class="icon_image" src="./images/pythonLogo.png" alt="python logo">
 	</div>
 	<div class="projects">
-		<img id="full_web" src="./images/capture13.PNG" alt="Loyd's Fifteen puzzle">
+		<img class="main_img" src="./images/capture13.PNG" alt="Loyd's Fifteen puzzle">
 		<p><a href="http://www.codeskulptor.org/#user40_6rvZWVbfWui3HzA.py" target="_blank">Loyd's Fifteen puzzle</a>
 		this was one of my mini project for the Principles of Computing 
 		on <a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
 		Coursera.org - Fundamentals of Computing Specialization.</a><br>
-		<a id="show_hide" href="javascript:showhide('proj6')">show / hide more</a>
+		<a class="show_hide" href="javascript:showhide('proj6')">show / hide more</a>
 		<div id="proj6" style="display:none;">
         <p>Loyd's Fifteen puzzle<br>
 			Principles of Computing in Python which is 2 of 3 in the 
@@ -231,84 +282,20 @@
 			is a sliding puzzle that consists of a frame of numbered square tiles in random order with one tile numberded 0. 
 			The object of the puzzle is to place the tiles in order by making sliding moves that use the empty space 
 			(tile numberded 0).
-			<h5>HOW TO PLAY?</h5>
-			Note that solved configuration has the blank (zero) tile in upper left<br>
-			Use the arrows key to swap this tile with its neighbors.<br>
-			Some configurations (if use random shuffle) are not solvable 
-			by this program, if get message "2x2 puzzels can't be solved" on the console, 
-			some or all top-left 4 tiles will remain unsorted.<br>
-			GRID_SIZE can by changed(line 25) 2< GRID_SIZE >(not tested above 8)<br>
-			Enable pop-up windows!!<br><br>
-			* poc_fifteen_gui and Puzzle class provided by instructors
-			  and modified (random shuffle method added)
 		<p class="links">
 		<a href="http://www.codeskulptor.org/#user40_6rvZWVbfWui3HzA.py" target="_blank">www.CodeSkulptor/Fifteen Puzzle</a>
 		<a href="https://github.com/tomasz-g/Fifteen-Puzzle" target="_blank">www.GitHub/Fifteen Puzzle</a>
-		<a id="hide" href="javascript:showhide('proj6')">hide more</a>
-		</p>
-		</p></div></p>
-		<img id="icon_image" src="./images/pythonLogo.png" alt="python logo">
+		<a class="hide" href="javascript:showhide('proj6')">hide</a>
+		</p></div>
+		<img class="icon_image" src="./images/pythonLogo.png" alt="python logo">
 	</div>
 	<div class="projects">
-		<img id="full_web" src="./images/capture14.PNG" alt="Zombie Apocalypse">
-		<p><a href="http://www.codeskulptor.org/#user42_A8IujNpwH3GZXEX.py" target="_blank">Zombie Apocalypse</a>
-		this was one of my mini project for the Principles of Computing 
-		on <a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
-		Coursera.org - Fundamentals of Computing Specialization.</a><br>
-		<a id="show_hide" href="javascript:showhide('proj7')">show / hide more</a>
-		<div id="proj7" style="display:none;">
-        <p>Zombie Apocalypse<br>
-			Principles of Computing in Python which is 2 of 3 in the 
-			<a href="https://www.coursera.org/specializations/computer-fundamentals" target="_blank">
-			Fundamentals of Computing Specialization.</a><br> 
-			by Joe Warren, Scott Rixner, John Greiner, Stephen Wong -- Rice Univercity<br>
-			project by TG<br>
-			<p>
-			"ApocalypseGUI class", "Grid class" and "Queue class" provided by instrucrors and "ApocalypseGUI" modified by TG (Dark City and auto movment)<br>
-			link to provided code <a href="http://www.codeskulptor.org/#poc_zombie_template.py" target="_blank">Zombie template</a><br>			
-			<h4>Zombie Apocalypse</h4>
-			<p>
-			 Simulation of zombies (red sqares) and humans 
-			(green squares) interacting on a grid.
-			Zombies chase humans and humans flee from zombies which 
-			can only move up, down, left or right in one step
-			of the simulation and humans are more agile and can move
-			in these four directions as well as the four neighboring 
-			diagonal directions. 
-			 If a zombie catches a human by positioning itself in the 
-			same cell, human become zombie (change for purple for a 
-			moment and then red permanently). 
-			 Some of the cells (black squares) in this grid will 
-			be marked as impassable and restrict zombie/human movement
-			so that they can not move through these cells.
-			</p>
-			<h4>How To Play</h4>
-			- popup windows must be enabled!!<br>
-			- Hit PLAY icon to Start (left top corner)<br>
-			- mouse click on canvas to add obstacle, zombie or human<br>
-			("Mouse click:" button to change add option)<br>
-			- Clear all button to reset the game and clear the city<br>
-			- Humans flee button to move humans one step of simulation<br>
-			- Zombies stalk button to move zombies one step of simulation<br>
-			- Dark City button to add random obstacles, zombies and humans<br>
-			- Start Game to start auto simulation<br>
-			- you can add zombies, humans, obstacle or random any time during the simulation
-		<p class="links">
-		<a href="http://www.codeskulptor.org/#user42_A8IujNpwH3GZXEX.py" target="_blank">www.CodeSkulptor/Zombie Apocalypse</a>
-		<a href="https://github.com/tomasz-g/ZombieApocalypse" target="_blank">www.GitHub/Zombie Apocalypse</a>
-		<a id="hide" href="javascript:showhide('proj7')">hide more</a>
-		</p>
-		</p></div></p>
-		<img id="icon_image" src="./images/pythonLogo.png" alt="python logo">
-		</div>
-		<div class="projects">
-		<img id="full_web" src="./images/capture15.PNG" alt="Student Registration System">
 		<p><span>Student Registration System</span>this was one of my Fundamentals of Object Oriented 
 		Programming in Java project. 
 		<a href="http://www.bfei.ie/courses/computer-science" target="_blank">
 		Blackrock Further Education Institute.
 		</a><br>
-		<a id="show_hide" href="javascript:showhide('proj8')">show / hide more</a>
+		<a class="show_hide" href="javascript:showhide('proj8')">show / hide more</a>
 		<div id="proj8" style="display:none;">
         <p>Student Registration System<br>
 		Program interface designed using a Switch statement to call relevant methods and logical program blocks 
@@ -325,14 +312,16 @@
 		- (student ID is created automatically, can not be modify by the user)<br>
 		Note:  table view with student/s details will change 
 		if length of (name + surname) exceeds 18 Characters<br>
-		Avoid if possible.		
+		<p>Student Registration Snipped:
+		<script src="https://gist.github.com/tomasz-g/6c83d279960c9559963beacd925ed5d4.js"></script>
+		</p>
 		<p class="links">
 		<a href="https://github.com/tomasz-g/StudentRegistrationSystem" target="_blank">www.GitHub/Student Registration System</a>
-		<a id="hide" href="javascript:showhide('proj8')">hide more</a>
-		</p>
-		</p></div></p>
-		<img id="icon_image" src="./images/pythonLogo.png" alt="java logo">
-		</div>
-	<div id= "footer"><a href="#top">TOP</a></div>
+		<a class="hide" href="javascript:showhide('proj8')">hide</a>
+		</p></div>
+		<img class="icon_image" src="./images/javaLogo.png" alt="java logo">
+	</div>
+	<div id="top"><a href="#page_top">TOP</a></div>
+	<div id="footer">Created and &copy; Tomasz Golas 2017</div>
 </body>
 </html>
